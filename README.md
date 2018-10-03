@@ -27,7 +27,7 @@ Add the below to app/Providers/NovaServiceProvder.php
   } 
 ```
 
-<img src="https://raw.githubusercontent.com/naifalshaye/worldclock/master/screenshots/screenshot.png" width="450">
+<img src="https://raw.githubusercontent.com/naifalshaye/worldclock/master/screenshots/screenshot.png" width="350">
 
 ## Credits
 [Abdullah Algethami](https://twitter.com/3bdo3tb)
