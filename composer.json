@@ -3,7 +3,11 @@
     "description": "A Laravel Nova card to display world clocks",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "card",
+        "time",
+        "clock",
+        "world"
     ],
     "license": "MIT",
     "require": {
