@@ -1,5 +1,5 @@
 # World Clock
-A Laravel Nova card to display world clocks
+A Laravel Nova card to display world clock
 
 ## Installation:
 
