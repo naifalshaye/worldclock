@@ -15,6 +15,20 @@ class WorldClock extends Card
     public $width = '1/3';
 
     /**
+     * The format used to display time on card.
+     * See http://php.net/manual/en/function.date.php for options
+     *
+     * @var string
+     */
+    public $format = 'h:i a';
+
+
+    public function __construct($format = 'h:i a')
+    {
+        $this->format = $format;
+    }
+
+    /**
      * Get the component name for the element.
      *
      * @return string
@@ -32,7 +46,7 @@ class WorldClock extends Card
             $name = str_replace('_',' ',$name);
             array_push($times,[
                 'name'=> ucwords($name),
-                'time'=> $time->format('h:i a')
+                'time'=> $time->format($this->format)
             ]);
         }
         return $this->withMeta([
