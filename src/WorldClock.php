@@ -45,7 +45,7 @@ class WorldClock extends Card
         ]);
     }
 
-    public function timeFormat($timeFormat = 'h:i a') {
+    public function timeFormat($timeFormat) {
 
         return $this->withMeta([
             'timeFormat' => $timeFormat
