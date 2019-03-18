@@ -14,18 +14,9 @@ class WorldClock extends Card
      */
     public $width = '1/3';
 
-    /**
-     * The format used to display time on card.
-     * See http://php.net/manual/en/function.date.php for options
-     *
-     * @var string
-     */
-    public $format = 'h:i a';
-
-
     public function __construct()
     {
-
+        
     }
 
     /**
