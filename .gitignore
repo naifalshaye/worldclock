@@ -1,7 +1,7 @@
 /.idea
 /vendor
 /node_modules
-/screenshots
+
 package-lock.json
 composer.phar
 composer.lock
