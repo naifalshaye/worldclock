@@ -13,9 +13,9 @@
                             {{time.name}}
                         </td>
                         <td class="td_h">
-                            {{time.time.slice(0, -2)}}
-                            <span class="fa fa-moon" v-show="time.time.includes('pm')" style="color:#7a7a7a;"></span>
-                            <span class="fa fa-sun" v-show="time.time.includes('am')" style="color:#F7941D;"></span>
+                            {{time.time}}
+                            <span class="fa fa-moon" v-show="time.night" style="color:#7a7a7a;"></span>
+                            <span class="fa fa-sun" v-show="!time.night" style="color:#F7941D;"></span>
                         </td>
                     </tr>
                 </table>
