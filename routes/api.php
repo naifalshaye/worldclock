@@ -18,3 +18,5 @@ use Naif\WorldClock\Http\Controllers\ClockController;
 // Route::get('/endpoint', function (Request $request) {
 //     //
 // });
+
+Route::post('/get_times', 'Naif\WorldClock\Http\Controllers\WorldClockController@getTimes');
