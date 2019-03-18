@@ -23,31 +23,12 @@ Add the below to app/Providers/NovaServiceProvder.php
                 'America/new_york',
                 'America/los_angeles',
             ]),
+            ->timeFormat('h:i') //Optional time format default is: 'h:i:s'
       ];
   }
 ```
 
 <img src="https://raw.githubusercontent.com/naifalshaye/worldclock/master/screenshots/screenshot.png" width="350">
-
-## Format Time ( optional )
-
-Add a different format to the constructor, see http://php.net/manual/en/function.date.php for available formatting options.
-
-For example: 24-hour formatting:
-```php
-  public function card()
-  {
-      return [
-         (new WorldClock('H:i'))
-            ->timezones([
-                'Asia/Tokyo',
-                'Asia/Dubai',
-                'America/new_york',
-                'America/los_angeles',
-            ]),
-      ];
-  }
-```
 
 
 ## Credits
