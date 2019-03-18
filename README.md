@@ -22,7 +22,7 @@ Add the below to app/Providers/NovaServiceProvder.php
                 'Asia/Dubai',
                 'America/new_york',
                 'America/los_angeles',
-            ]),
+            ])
             ->timeFormat('h:i') //Optional time format default is: 'h:i:s'
       ];
   }
