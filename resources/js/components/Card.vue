@@ -14,8 +14,8 @@
                         </td>
                         <td class="td_h">
                             {{time.time}}
-                            <span class="fa fa-moon" v-show="time.night" style="color:#7a7a7a;"></span>
-                            <span class="fa fa-sun" v-show="!time.night" style="color:#F7941D;"></span>
+                            <span v-show="time.night" style="color:#F7941D;"><font-awesome-icon icon="moon" /></span>
+                            <span v-show="!time.night" style="color:#F7941D;"><font-awesome-icon icon="sun" /></span>
                         </td>
                     </tr>
                 </table>
