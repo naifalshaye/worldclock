@@ -1,7 +1,7 @@
 <template>
     <card class="h-auto" style="max-width:300px;">
         <div class="px-3 py-3">
-            <div style="margin-top:10px; text-align: center;">
+            <div style="margin-top:10px; text-align: center;" id="app">
 
                 <table align="center" class="table">
                     <tr>
@@ -44,6 +44,7 @@
     },
     mounted() {
         this.getTime();
+
     },
     methods: {
       getTime() {
