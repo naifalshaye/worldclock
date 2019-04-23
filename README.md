@@ -13,6 +13,17 @@ composer require naif/world-clock
 Add the below to app/Providers/NovaServiceProvder.php
 
 ```php
+namespace App\Providers;
+
+[...]
+
+use Naif\WorldClock\WorldClock;
+
+class NovaServiceProvider extends NovaApplicationServiceProvider
+{
+
+[...]
+
   public function card()
   {
       return [
@@ -26,6 +37,11 @@ Add the below to app/Providers/NovaServiceProvder.php
             ->timeFormat('h:i') //Optional time format default is: 'h:i:s'
       ];
   }
+
+[...]
+
+}
+
 ```
 
 <img src="https://raw.githubusercontent.com/naifalshaye/worldclock/master/screenshots/screenshot.png" width="350">
