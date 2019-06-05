@@ -42,4 +42,10 @@ class WorldClock extends Card
             'timeFormat' => $timeFormat
         ]);
     }
+
+    public function updatePeriod($ms = 1000) {
+        return $this->withMeta([
+            'ms' => $ms
+        ]);
+    }
 }

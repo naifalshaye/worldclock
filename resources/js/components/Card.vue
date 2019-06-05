@@ -2,7 +2,6 @@
     <card class="h-auto" style="max-width:300px;">
         <div class="px-3 py-3">
             <div style="margin-top:10px; text-align: center;" id="app">
-
                 <table align="center" class="table">
                     <tr>
                         <th>City</th>
@@ -30,7 +29,6 @@
     }
 </style>
 <script>
-
   export default {
     props: ['card'],
     data() {
@@ -40,16 +38,14 @@
     },
     created: function() {
       this.getTime();
-      this.timer = setInterval(this.getTime, 1500)
+      setInterval(this.getTime, this.card.ms)
     },
     mounted() {
         this.getTime();
-
     },
     methods: {
       getTime() {
         this.timezones = [];
-
         Nova.request().post('/nova-vendor/world-clock/get_times', {
           timezones: this.card.timezones,
           timeFormat: this.card.timeFormat
