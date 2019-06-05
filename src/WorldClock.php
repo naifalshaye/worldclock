@@ -14,11 +14,6 @@ class WorldClock extends Card
      */
     public $width = '1/3';
 
-    public function __construct()
-    {
-        
-    }
-
     /**
      * Get the component name for the element.
      *

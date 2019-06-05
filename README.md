@@ -35,6 +35,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                 'America/los_angeles',
             ])
             ->timeFormat('h:i') //Optional time format default is: 'h:i:s'
+            ->updatePeriod(1000) //Optional to set updating time period in millisecond default is 1000 ms = 1 second
       ];
   }
 
