@@ -12,12 +12,9 @@ class WorldClockController
             $request->timeFormat = 'h:i:s';
         }
         $times = [];
-        $night = true;
         foreach ($request->timezones as $timezone){
             $time = Carbon::now($timezone);
-            if ($time->format('H') < 17) {
-                $night = false;
-            }
+            $night = (int) $time->format('H') > 17;
             $name = explode('/',$time->getTimezone()->getName())[1];
             $name = str_replace('_',' ',$name);
             array_push($times,[
